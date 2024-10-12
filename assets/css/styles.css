@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "aside"
+    "main"
+    "footer";
+}
+nav {
+  grid-area: nav;
+  background-color: aqua;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid black;
+}
+section {
+  grid-area: aside;
+  background-color: brown;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+item {
+  grid-area: item;
+}
+main {
+  grid-area: main;
+  background-color: blue;
+}
+footer {
+  grid-area: footer;
+  background-color: red;
+}
